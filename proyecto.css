@@ -3,6 +3,7 @@ body{
     background:#cce2e4;
 }
 .cabeza{
+    margin: 20px;
 }
 
 .principal{
@@ -17,6 +18,7 @@ body{
 
 }
 .texto-principal{
+    text-indent: 7em;
     font-size:20px ;
     border-radius: 20px;
     border: 3px double #ccc;
@@ -37,11 +39,17 @@ background: #e1ede0;
 
 }
 .texto-apartado{
+    font-size: 20px ;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
+    border-radius: 18px;
+    border: 3px double #eaefc8;
+    background: #e1ede0;
+}
+.texto-apartado:active{
+    border: 3px double #eaefc8;
 }
 .imagen-apartado{
-    
    margin: 20px 50px;
 }
 .boton{
@@ -57,7 +65,9 @@ font-weight: bold;
  color: white ;
  border-radius: 20px ;
  border: 3px double #e1ede0;
-
+}
+.boton-encriptador:active{
+    background: #000;
 }
 .boton-desencriptador{
     margin-left: 220px;

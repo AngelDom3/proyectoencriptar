@@ -7,16 +7,17 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="proyecto.css">
+
 </head>
 <body>
 
     <header class="cabeza">
-
+ <img src="imagenes/Vector.png" >
     </header>
 
 
 <main class="principal">
- <textarea  cols="48" rows="10" class="texto-principal"></textarea>
+ <textarea  cols="48" rows="10" class="texto-principal" placeholder="&nbsp;ingrese el texto"></textarea>
 
      
     
@@ -24,7 +25,8 @@
 
  <div class="apartado">
 
-     <input type="text" class="texto-apartado">
+     <textarea  cols="23" rows="6" class="texto-apartado"></textarea>
+
      <img  width="200px" height="200px" src="imagenes/Muñeco.png" class="imagen-apartado">
  </div>
 
@@ -40,3 +42,24 @@
 
 
 </html>
+ <script>
+    
+    var hola = document.querySelector(".boton-encriptador");
+      hola.onclick = verificar;
+    
+    function verificar(){
+    
+        alert("hola word")
+    }
+    
+    var adios = document.querySelector(".boton-desencriptador");
+      adios.onclick = desverificar;
+    
+    function desverificar(){
+    
+        alert("adios word")
+    }
+     var textoApartado = document.querySelector(".texto-apartado")
+     
+    </script>
+    

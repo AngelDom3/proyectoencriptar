@@ -10,9 +10,9 @@ function encriptador(){
          textoPrincipal= textoPrincipal.replace (/o/g,"ober");
          textoPrincipal= textoPrincipal.replace (/u/g,"ufat");
     document.getElementById("texto-apartado").value=textoPrincipal;
-}/*encriptador */
+}/*fin De Encriptador */
 
- /*desencriptador */
+ /*Esencriptador */
 var botondesencriptar = document.querySelector(".boton-desencriptador")
 botondesencriptar.onclick = desencriptar;
 
@@ -25,8 +25,5 @@ var textoPrincipal = document.getElementById("texto-principal").value;
     textoPrincipal= textoPrincipal.replace (/ober/g,"o");
     textoPrincipal= textoPrincipal.replace (/ufat/g,"u");
 document.getElementById("texto-apartado").value=textoPrincipal;
-
-
-
 }
- /*desencriptador */
+ /*Esencriptador */

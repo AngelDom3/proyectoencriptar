@@ -1,6 +1,6 @@
 body{
     width: 940px;
-    background:#cce2e4;
+    background:/*#cce2e4 #37023a*/ url(imagenes/peakpx.jpg);
 }
 .cabeza{
     margin: 20px;
@@ -21,8 +21,8 @@ body{
     text-indent: 7em;
     font-size:20px ;
     border-radius: 20px;
-    border: 3px double #ccc;
-    background: #fffeee;
+    border: 3px double #e1ede0;
+    background: /*#fffeee*/ #e1ede0;
     
  }
 .apartado{
@@ -34,21 +34,21 @@ body{
     right: 35px ;
 
 border-radius: 20px;
-border: 5px double #eaefc8;
-background: #e1ede0;
+border: 5px double #e1ede0;
+background: /*#e1ede0*/#af9ab0;
+background: url(imagenes/fondo-apartado.avif);
 
 }
 .texto-apartado{
-    font-size: 20px ;
+    font-size: 18px ;
+    font-family: "Space Mono";
     display: block;
     margin: 10px auto;
     border-radius: 18px;
-    border: 3px double #eaefc8;
+    border: 3px double #af9ab0;
     background: #e1ede0;
 }
-.texto-apartado:active{
-    border: 3px double #eaefc8;
-}
+
 .imagen-apartado{
    margin: 20px 50px;
 }
@@ -60,22 +60,35 @@ background: #e1ede0;
 .boton-encriptador{
 width: 200px;
 height: 40px;
-background: #006464;
+/*background: #006464 #64066b;*/
+background: url(imagenes/boton.jpg);
 font-weight: bold;
+font-family: 'BioRhyme', serif;
  color: white ;
  border-radius: 20px ;
  border: 3px double #e1ede0;
 }
 .boton-encriptador:active{
-    background: #000;
+   
+    color:#000;
+    border: 3px double #f82e86;
+    font-size:15px;
 }
 .boton-desencriptador{
     margin-left: 220px;
     width: 200px;
     height: 40px;
-    background: #48a3a7;
+    /*background: #48a3a7#7e0885;*/
+    background: url(imagenes/boton2.jpg);
     font-weight: bold;
+    font-family: 'BioRhyme', serif;
     color: white ;
     border-radius: 20px ;
     border: 3px double #e1ede0;
+}
+.boton-desencriptador:active {
+
+    color:#000;
+    border: 3px double #f82e86;
+    font-size:15px;
 }

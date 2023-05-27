@@ -1,19 +1,15 @@
+var botonEncriptar = document.querySelector(".boton-encriptador")
+botonEncriptar.onclick = encriptador;
 
-    
-var hola = document.querySelector(".boton-encriptador");
-  hola.onclick = verificar;
 
-function verificar(){
+function encriptador(){
+    var textoPrincipal = document.getElementById("texto-principal").value;
+     
+     textoPrincipal= textoPrincipal.replace (/e/g,"enter");
+     textoPrincipal= textoPrincipal.replace (/i/g,"imes");
+     textoPrincipal= textoPrincipal.replace (/a/g,"ai");
+     textoPrincipal= textoPrincipal.replace (/o/g,"ober");
+     textoPrincipal= textoPrincipal.replace (/u/g,"ufat");
+    document.getElementById("texto-apartado").value=textoPrincipal;
 
-    alert("hola word")
 }
-
-var adios = document.querySelector(".boton-desencriptador");
-  adios.onclick = desverificar;
-
-function desverificar(){
-
-    alert("adios word")
-}
- var textoApartado = document.querySelector(".texto-apartado")
- 

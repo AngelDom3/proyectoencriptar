@@ -17,6 +17,17 @@ body{
  
 
 }
+.notificacion-imagen{
+display: inline;
+float: left;
+position: relative;
+bottom: 3px;
+}
+.notificacion{
+color: red ;
+font-size: 17px;
+
+}
 .texto-principal{
     text-indent: 7em;
     font-size:20px ;

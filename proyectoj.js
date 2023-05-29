@@ -3,8 +3,10 @@ var botonEncriptar = document.querySelector(".boton-encriptador")
      botonEncriptar.onclick = encriptador;
 
 function encriptador(){
-    var textoPrincipal = document.getElementById("texto-principal").value;
-         textoPrincipal= textoPrincipal.replace (/e/g,"enter");
+     var textoPrincipal = document.getElementById("texto-principal").value;
+     textoPrincipal= textoPrincipal.replaceAll (/[0-9]/g,"");
+     textoPrincipal= textoPrincipal.replaceAll (/[A-Z]/g,"");
+         textoPrincipal= textoPrincipal.replaceAll (/e/g,"enter");
          textoPrincipal= textoPrincipal.replace (/i/g,"imes");
          textoPrincipal= textoPrincipal.replace (/a/g,"ai");
          textoPrincipal= textoPrincipal.replace (/o/g,"ober");
@@ -27,7 +29,7 @@ var textoPrincipal = document.getElementById("texto-principal").value;
 document.getElementById("texto-apartado").value=textoPrincipal;
 }
  /*Fin de Desencriptador */
-
+ 
 
 
  /*copiar texto y eliminarlo*/

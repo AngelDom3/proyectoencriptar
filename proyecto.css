@@ -61,7 +61,10 @@ background: url(imagenes/fondo-apartado.avif);
   background: url(imagenes/boton-copiar3.jpg);
   padding: 5px 10px;
   border-radius: 15px;
-  border: 3px double #e1ede0;
+  border: 3px double #e1ede0
+}
+.boton-copiar:active{
+    
 
 }
 .boton{

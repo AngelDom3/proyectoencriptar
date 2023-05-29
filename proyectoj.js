@@ -1,6 +1,6 @@
 /*encriptador */
 var botonEncriptar = document.querySelector(".boton-encriptador")
-botonEncriptar.onclick = encriptador;
+     botonEncriptar.onclick = encriptador;
 
 function encriptador(){
     var textoPrincipal = document.getElementById("texto-principal").value;
@@ -14,7 +14,7 @@ function encriptador(){
 
  /*Desencriptador */
 var botondesencriptar = document.querySelector(".boton-desencriptador")
-botondesencriptar.onclick = desencriptar;
+     botondesencriptar.onclick = desencriptar;
 
 function desencriptar(){
 var textoPrincipal = document.getElementById("texto-principal").value;
@@ -27,6 +27,8 @@ var textoPrincipal = document.getElementById("texto-principal").value;
 document.getElementById("texto-apartado").value=textoPrincipal;
 }
  /*Fin de Desencriptador */
+
+
 
  /*copiar texto y eliminarlo*/
  var botonCopiar = document.querySelector(".boton-copiar")
@@ -45,8 +47,26 @@ document.getElementById("texto-apartado").value=textoPrincipal;
      var principalEliminar = document.querySelector(".texto-principal")
      principalEliminar.select()
      document.execCommand("delete")
-
-
+     
+     document.getElementById("texto-apartado").value="     Texto Copiado" ;
+     
+     tiempoElimninar()
  }
 
- /*copiar texto y eliminarlo*/
+                  /*eliminar "¡texto copiado! y cambiando su color"*/ 
+                function tiempoElimninar(){
+                     document.getElementById("texto-apartado").style.color="#c70038";
+                     document.getElementById("texto-apartado").style.fontWeight="bold"
+
+                     setTimeout(eliminarCopiado,400)
+                }
+                function eliminarCopiado(){
+                     document.getElementById("texto-apartado").style.color="#000";
+                     document.getElementById("texto-apartado").style.fontWeight="bold"
+
+                     document.getElementById("texto-apartado").value=""
+   
+                }
+ /* Fin De copiar texto y eliminarlo*/
+ 
+ 

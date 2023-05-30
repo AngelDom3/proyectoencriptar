@@ -12,6 +12,7 @@ function encriptador(){
          textoPrincipal= textoPrincipal.replace (/o/g,"ober");
          textoPrincipal= textoPrincipal.replace (/u/g,"ufat");
     document.getElementById("texto-apartado").value=textoPrincipal;
+    document.getElementById("texto-invisible").value=textoPrincipal;
 }/*fin De Encriptador */
 
  /*Desencriptador */
@@ -27,12 +28,16 @@ var textoPrincipal = document.getElementById("texto-principal").value;
     textoPrincipal= textoPrincipal.replace (/ober/g,"o");
     textoPrincipal= textoPrincipal.replace (/ufat/g,"u");
 document.getElementById("texto-apartado").value=textoPrincipal;
+document.getElementById("texto-invisible").value=textoPrincipal;
 }
  /*Fin de Desencriptador */
  
 
 
  /*copiar texto y eliminarlo*/
+
+
+
  var botonCopiar = document.querySelector(".boton-copiar")
      botonCopiar.onclick = copiarYEliminar;
 
@@ -58,17 +63,77 @@ document.getElementById("texto-apartado").value=textoPrincipal;
                   /*eliminar "¡texto copiado! y cambiando su color"*/ 
                 function tiempoElimninar(){
                      document.getElementById("texto-apartado").style.color="#c70038";
+
                      document.getElementById("texto-apartado").style.fontWeight="bold"
+                    
 
                      setTimeout(eliminarCopiado,400)
                 }
                 function eliminarCopiado(){
                      document.getElementById("texto-apartado").style.color="#000";
+                   
+
                      document.getElementById("texto-apartado").style.fontWeight="bold"
+                     
 
                      document.getElementById("texto-apartado").value=""
+                     
    
                 }
  /* Fin De copiar texto y eliminarlo*/
- 
+
+
+
+
+
+
+
+ /*  copiar texto y eliminarlo telefono*/
+
+
+
+ var botoninvisible = document.querySelector(".boton-invisible")
+     botoninvisible.onclick = copiarYEliminar2;
+
+ function copiarYEliminar2(){
+    
+    
+     var textoCopiar = document.querySelector(".texto-invisible")
+
+     textoCopiar.select()
+     document.execCommand("copy")
+     document.execCommand("delete")
+
+     
+     var principalEliminar = document.querySelector(".texto-principal")
+     principalEliminar.select()
+     document.execCommand("delete")
+     
+     document.getElementById("texto-invisible").value="     Texto Copiado" ;
+     
+     tiempoElimninar1()
+ }
+
+                  /*eliminar "¡texto copiado! y cambiando su color telefono"*/ 
+          function tiempoElimninar1()  {
+                     document.getElementById("texto-invisible").style.color="#c70038";
+
+                     document.getElementById("texto-invisible").style.fontWeight="bold"
+                    
+                     setTimeout(eliminarCopiado1,400)
+                }
+
+           function eliminarCopiado1()  {
+                     document.getElementById("texto-invisible").style.color="#000";
+                   
+
+                     document.getElementById("texto-invisible").style.fontWeight="bold"
+                     
+
+                     document.getElementById("texto-invisible").value=""
+                     
+   
+                }
+
+
  

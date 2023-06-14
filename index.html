@@ -19,6 +19,7 @@
 
 
 
+
 <body>
   
  
@@ -28,23 +29,34 @@
    
      <img width="23px" height="23px" src="imagenes/notificacion.png" class="notificacion-imagen">
      <p class="notificacion">no usar caracteres especiales o mayúsculas para evitar errores</p>
-     <textarea  class="texto-principal" id="texto-principal" placeholder="&nbsp;ingrese el texto"></textarea>
-</textarea>
+     
+     <div  class="texto-principal-invisible">
+      <textarea  class="texto-principal" id="texto-principal" placeholder="&nbsp;ingrese el texto"></textarea>
+     </div>
+
+
      
     
  </main>
 
  <div class="apartado">
+     
+           <textarea  cols="23" rows="6" class="texto-apartado" id="texto-apartado" readonly></textarea>
 
-     <textarea  cols="23" rows="6" class="texto-apartado" id="texto-apartado" readonly></textarea>
-     <img  width="200px" height="200px" src="imagenes/Muñeco.png" class="imagen-apartado">
+           <div class="div-muneco">
+            <img   src="imagenes/Muñeco.png" class="imagen-apartado" id="imagen-apartado">
+           </div>
+           
      <input type="submit" class="boton-copiar" id="copiar-boton" value="COPIAR" >
+
  </div>
  
 
        <div   class="invisible">
-
+     
+          <div class="texto-div-invisible">
         <textarea   class="texto-invisible" id="texto-invisible" readonly></textarea>
+     </div>
         <input type="submit" class="boton-invisible" id="boton-invisible" value="Copiar">
         </div>
 
@@ -64,3 +76,4 @@
 
 </body>
 </html>
+

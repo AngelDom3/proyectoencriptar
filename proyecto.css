@@ -1,4 +1,5 @@
 
+
 .cabeza{
     margin: 20px;
 }
@@ -30,8 +31,12 @@ bottom: 3px;
 .notificacion{
 color: red ;
 font-size: 17px;
-
 }
+.texto-principal-invisible{
+   width: 100%;
+   height: 100%;
+}
+
 .texto-principal{
     text-indent: 7em;
     font-size:20px ;
@@ -55,22 +60,33 @@ border: 5px double #e1ede0;
 background: /*#e1ede0*/#af9ab0;
 background: url(imagenes/fondo-apartado.avif);
 
+align-items: center;
+
 }
 .texto-apartado{
     font-size: 18px ;
     font-family: "Space Mono";
+    font-weight: bold;
     display: block;
     margin: 10px auto;
     border-radius: 18px;
     border: 3px double #af9ab0;
     background: #e1ede0;
 }
-
+/*width="200px" height="200px"*/
+.div-muneco{
+width: 80%;
+margin: 0 auto;
+}
 .imagen-apartado{
-   margin: 20px 50px 80px 50px;
+    
+ width: 100%;
+ margin: 0 auto;
+ /*margin: 20px 50px 80px 50px;*/
 
 }
 .boton-copiar{
+    opacity: 0;
   margin: 65px 40% 20px ;
   font-family: 'BioRhyme', serif;
   font-weight: bold;
@@ -170,11 +186,7 @@ font-family: 'BioRhyme', serif;
 @media screen and (max-width:939px) {
      .texto-principal, .texto-invisible{
          width: 100%;
- 
-    
     }
-
-
       body{
         background: url(imagenes/fondo-telefono2.jpg);
         width: 100%;
@@ -186,10 +198,26 @@ font-family: 'BioRhyme', serif;
         top:20px;
         left: 0px;
        }
-       .texto-principal{
-        text-indent: 5em;
+       .texto-div-invisible{
+        margin: 0 auto ;
+        width: 90%;
+        height: 100%;
        }
-       
+       .texto-invisible{
+        width: 100%;
+        height: 100%;
+       }
+       .texto-principal-invisible{
+        margin: 0 auto;
+        width: 95%;
+       }
+       .texto-principal{
+        margin: 0 auto;
+        text-indent: 5em;
+        width: 95%;
+
+       }
+
        .invisible{
         opacity: 1;
         width: 100%;
@@ -198,6 +226,8 @@ font-family: 'BioRhyme', serif;
         left: 0px;
        }
        .boton-invisible{
+        
+       
         opacity: 1;
        }
        .mueñeco-invisible{
